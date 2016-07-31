@@ -1,0 +1,171 @@
+.slider {
+	width: 100%;
+	height: 366px;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	position: relative;
+	background-color: #fff;
+	
+	&__wrapper {
+		height: 100%;
+		position: relative;
+	}
+	
+	&__search {
+		display: none;
+	}
+
+	&__navigation {
+		width: 21px;
+		height: 37px;
+		display: block;
+		position: absolute;
+		top: 50%;
+		border: 0;
+		margin-top: -18px;
+		cursor: pointer;
+		z-index: 1000;
+		opacity: 0.5;
+		background: none;
+		background-repeat: no-repeat;
+		transition: opacity $a-time;
+		background-size: 21px 37px;
+		
+		&:hover {
+			opacity: 1;
+		}
+
+		&_prev {
+			left: 30px;
+			background-image: url(/images/ar-left.png);
+		}
+
+		&_next {
+			right: 30px;
+			background-image: url(/images/ar-right.png);
+		}
+	}
+
+	&__item {
+	    float: left;
+		height: 366px;
+		overflow: hidden;
+		position: relative;
+		
+		&__image {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			z-index: 10;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: cover;
+		}
+
+		&__content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 100;
+			line-height: 1;
+			padding: 72px 0px 0;
+			@extend %layout;
+		}
+
+		&__title {
+			color: #fff;
+			font-family: 'PT-Sans', 'PTSans', sans-serif;
+			font-size: 8rem;
+			font-weight: 700;
+			line-height: 1;
+			margin-left: -4px;
+			margin-bottom: 25px;
+		}
+
+		&__description {
+			color: #e9eeff;
+			max-width: 450px;
+			font-size: 1.6rem;
+			font-weight: 400;
+			line-height: 1.13;
+			padding-left: 13px;
+			border-left: 2px solid #ffd500;
+		}
+	
+		&__overlay {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 20;
+			background: url(/images/slider-overlay.png) 50% 50% no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+ul.slick-dots {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	font-size: 0;
+	line-height: 0;
+	bottom: 32px;
+	z-index: 1000;
+	text-align: center;
+}
+
+ul.slick-dots li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 6px;
+}
+
+ul.slick-dots li button {
+	width: 0.8rem;
+	height: 0.8rem;
+	cursor: pointer;
+	padding: 0;
+	font-size: 0;
+	text-indent: -100px;
+	overflow: hidden;
+	background-color: #007495;
+	border: 0;
+}
+
+ul.slick-dots li.slick-active button {
+	background-color: #0099c4;
+}
+
+@media screen and (max-width: 768px) {
+	.slider {
+		&__search {
+			display: block;
+			position: absolute !important;
+			z-index: 100;
+		    top: 30px;
+		    left: 20px;
+		    right: 20px;
+		}
+		
+		&__navigation {
+			display: none !important;
+		}
+
+		&__item {
+			&__content {
+				padding-top: 110px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			
+			&__title {
+				font-size: 2.6rem;
+				line-height: 0.67;
+			}
+		}
+	}
+}

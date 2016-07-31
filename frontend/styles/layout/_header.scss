@@ -1,0 +1,57 @@
+.layout-header {
+	height: 223px;
+	background: url(/images/header-background.jpg) 50% 50% no-repeat;
+
+	&__wrapper {
+		@extend %layout;
+	}
+
+	&__logo {
+		position: absolute;
+		left: 10px;
+		top: 38px;
+	}
+
+	&__mobile {
+		position: absolute;
+		left: 351px;
+		top: 31px;
+	}
+
+	&__contacts {
+		float: right;
+		margin-top: 35px;
+
+		&__title {
+			color: #fff;
+			font-family: $HelveticaNeueCyr;
+			font-size: 2.4rem;
+			font-weight: 700;
+			line-height: 1.2;
+			text-align: right;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.layout-header {
+		&__logo {
+			left: 10px;
+		}
+		
+		&__search {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.layout-header {
+		&__contacts {
+			background: none;
+			padding-left: 0;
+		}
+	}
+}

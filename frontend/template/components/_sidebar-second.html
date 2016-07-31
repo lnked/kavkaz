@@ -1,0 +1,25 @@
+<!--
+<form action="" class="sidebar__search form-search">
+    <input placeholder="Поиск продукции" class="form-search__input">
+    <button type="submit" class="form-search__button"></button>
+</form>
+-->
+
+<aside class="sidebar sidebar_simple" id="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+    
+    <div class="sidebar__trigger j-sidebar-trigger">
+        Новости
+    </div>
+    
+    <div class="sidebar__content j-sidebar-content">
+        @@if (current == 'news') {
+            
+            <ul class="years">
+                <li class="years__item"><a href="" class="years__item__link current">2016</a></li>
+                <li class="years__item"><a href="" class="years__item__link">2015</a></li>
+            </ul>
+            
+        }
+    </div>
+    
+</aside>

@@ -1,0 +1,22 @@
+@@include('./components/_meta.html', {
+	"title": "Main"
+})
+
+
+<div class="layout-wrapper">
+	@@include('./components/_header.html', {
+		"current": "index"
+	})
+
+	<div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
+		
+		@@include('./components/_sidebar.html')
+		
+		@@include('./content/_index.html')
+		
+	</div>
+</div>
+
+@@include('./components/_footer.html')
+
+@@include('./components/_scripts.html')

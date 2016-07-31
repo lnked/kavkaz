@@ -1,0 +1,23 @@
+.products {
+    clear: both;
+    margin-bottom: 15px;
+    
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 20px 20px 0;
+    }
+
+    &__clear {
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .products {
+        &__item {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

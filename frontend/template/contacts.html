@@ -1,0 +1,17 @@
+@@include('./components/_meta.html', {
+    "title": "Main"
+})
+
+
+<div class="layout-wrapper">
+    @@include('./components/_header.html', {
+        "current": "contacts"
+    })
+    
+    @@include('./content/_contacts.html')
+    
+</div>
+
+@@include('./components/_footer.html')
+
+@@include('./components/_scripts.html')

@@ -1,0 +1,28 @@
+.years {
+    &__item {
+        text-align: left;
+        margin-bottom: 10px;
+
+        &__link {
+            display: inline-block;
+            vertical-align: middle;
+            color: #018aff;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1;
+            font-family: $HelveticaNeueCyr;
+            text-decoration: underline;
+            
+            &.current {
+                color: #494949;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .years {
+        padding: 0 10px;
+    }
+}

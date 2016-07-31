@@ -1,0 +1,30 @@
+.phone {
+    clear: both;
+    padding-left: 36px;
+    background: url(/images/phone.png) 0 0 no-repeat;
+
+    &__item {
+        clear: both;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 4px;
+        display: block;
+    }
+
+    &__vacanse {
+        height: 24px;
+        color: #fff;
+        margin-top: 5px;
+        padding: 0 13px;
+        font-family: $HelveticaNeueCyr;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 26px;
+        display: inline-block;
+        text-decoration: none;
+        background-color: #003483;
+    }
+}
