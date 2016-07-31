@@ -8,10 +8,46 @@
         "current": "contacts"
     })
     
-    <div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
-        <div class="layout-wrapper__center clearfix">
-            @@include('./content/_contacts.html')
-        </div>
+    <div class="layout-wrapper__inner _no-padding clearfix" itemprop="mainContentOfPage">
+
+        <section class="contacts">
+            <div class="contacts__item contacts__item_map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9yMC2o8PQ_nti8wqtQWtUDchf9OgQsA0&width=100%&height=560&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+            </div>
+
+            <div class="contacts__item contacts__item_form">
+                <div class="contacts__form">
+                    <div class="contacts__form__address">
+                        <span class="contacts__form__address__line">Россия, г. Краснодар, ул. Таманская, 180</span>
+                    </div>
+                    <div class="contacts__form__phones">
+                        <div class="contacts__form__phones__item">8(861) 991-20-00</div>
+                        <div class="contacts__form__phones__item">8(861) 992-11-25</div>
+                        <div class="contacts__form__phones__vacance">Вакансии</div>
+                    </div>
+
+                    <div class="contacts__form__title">
+                        <span class="contacts__form__title__line">Заказать звонок</span>
+                    </div>
+
+                    <form action="" method="post" class="form ajax-form clearfix">
+                        <div class="form__row clearfix">
+                            <input name="name" class="form__input" placeholder="ФИО">
+                        </div>
+
+                        <div class="form__row clearfix">
+                            <input name="phone" class="form__input js-phone-watcher" placeholder="Телефон">
+                        </div>
+
+                        <div class="form__button">
+                            <button type="submit" class="button button_submit">Отправить</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+
     </div>
     
 </div>

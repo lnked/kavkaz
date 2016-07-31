@@ -1,15 +1,32 @@
+.content-tarification {
+    width: 300px;
+    float: left;
+    margin-right: -300px;
+}
+
+p {
+    &:not([class]) {
+        color: #232323;
+        font-family: $HelveticaNeueCyr;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-bottom: 25px;
+    }
+}
+
 .content {
     width: 100%;
     float: left;
-    
-    p {
-        color: #000;
-        font-size: 1.4rem;
-        font-weight: 400;
-        line-height: 1.29;
-        margin-bottom: 25px;
+
+    &_main {
+        padding-bottom: 40px;
     }
 
+    &_left {
+        padding-right: 320px;
+    }
+    
     ul, ol {
         &:not([class]) {
             margin-bottom: 25px;

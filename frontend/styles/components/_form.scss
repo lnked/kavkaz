@@ -11,8 +11,9 @@ textarea {
 	cursor: auto;
 
 	&::placeholder {
-        color: #ababab;
+        color: #7b7b7b;
         opacity: 1;
+        text-align: center;
 	}
 
 	&:focus::placeholder {
@@ -84,8 +85,8 @@ textarea {
 	&__input,
 	&__textarea {
 	    width: 100%;
-        color: #262626;
-		font-family: $font-forms;
+        color: #7b7b7b;
+		font-family: $HelveticaNeueCyr;
 		box-sizing: border-box;
         background-color: #fff;
         border-radius: 9px;

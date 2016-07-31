@@ -1,34 +1,37 @@
 .news-main {
     clear: both;
-    padding: 45px 0;
+    margin-bottom: 20px;
     background-color: #fff;
+    
+    &__more {
+        clear: both;
 
-    &__wrapper {
-        @extend %layout;
-        font-size: 0;
-    }
-
-    &__title {
-        color: #000;
-        font-size: 3rem;
-        font-weight: 300;
-        line-height: 0.8;
-        text-align: center;
-        margin-bottom: 50px;
+        &__link {
+            color: #018aff;
+            font-family: $HelveticaNeueCyr;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.8rem;
+            text-decoration: underline;
+        }
     }
 
     &__item {
         clear: both;
 
+        &__wrapper {
+            clear: both;
+        }
+
         &__image {
-            width: 140px;
-            height: 140px;
+            width: 120px;
+            height: 120px;
             float: left;
             font-size: 0;
             position: relative;
             z-index: 10;
-            border: 10px solid #ffd500;
-            margin-right: -160px;
+            border: 10px solid #e0f0fb;
+            margin-right: -120px;
 
             &__src {
                 max-width: 100%;
@@ -41,8 +44,6 @@
         &__content {
             width: 100%;
             float: left;
-            padding-top: 20px;
-            padding-bottom: 20px;
         }
 
         &__image + &__content {
@@ -50,18 +51,31 @@
         }
 
         &__date {
-            color: #2671b9;
+            color: #242424;
             display: block;
+            font-family: $HelveticaNeueCyr;
+            font-size: 1.4rem;
             font-weight: 400;
-            font-size: 1.2rem;
-            line-height: 1.67;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        &__title {
+            color: #000;
+            font-family: $HelveticaNeueCyr;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2.2rem;
             margin-bottom: 15px;
+            display: block;
+            text-decoration: none;
         }
 
         &__description {
-            color: #4c4c4c;
-            font-weight: 400;
+            color: #232323;
+            font-family: $HelveticaNeueCyr;
             font-size: 1.4rem;
+            font-weight: 400;
             line-height: 1.29;
         }
     }

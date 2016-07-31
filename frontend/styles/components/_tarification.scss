@@ -24,6 +24,10 @@
         &__content {
             padding-top: 25px;
             text-align: center;
+
+            &._top {
+                padding-top: 35px;
+            }
         }
 
         &__support {

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!-- (c) lnk. celebro | http://www.celebro.ru/ -->
 <html lang="ru" class="no-js" itemscope="itemscope" xmlns="http://www.w3.org/1999/xhtml" itemtype="http://schema.org/WebPage">
-<head> 
+
+<head>
     <link rel="stylesheet" href="../css/main.min.css">
 
     <meta charset="UTF-8">
@@ -14,209 +15,260 @@
     <meta content="email=no" name="format-detection">
     <meta content="address=no" name="format-detection">
     <meta content="telephone=no" name="format-detection">
-    
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="/favicon/manifest.json">
-        <link rel="shortcut icon" href="/favicon/favicon.ico">
-        <meta name="msapplication-config" content="/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#007ce5">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#007ce5">
 
     <!--[if IEMobile]>
         <meta http-equiv="cleartype" content="on">
         <meta http-equiv="imagetoolbar" content="false">
     <![endif]-->
 
-    <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+    <script>
+        (function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);
+    </script>
     <title itemprop="name">Main</title>
 </head>
+
 <body>
 
-<div class="layout-wrapper">
-	<span class="sandwich js-sandwich-menu">
-	<span class="sandwich__layer">Menu</span>
-</span>
+    <div class="layout-wrapper">
+        <span class="sandwich js-sandwich-menu">
+            <span class="sandwich__layer">Menu</span>
+        </span>
 
-<div class="menu-overlay" id="menu-overlay"></div>
+        <div class="menu-overlay" id="menu-overlay"></div>
 
-<header class="layout-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-	<div class="layout-header__wrapper">
-		
-		<a href="" class="layout-header__logo logo"></a>
-		
-		<div class="layout-header__contacts">
-			<div class="layout-header__contacts__title">Диспетчерская<br>служба такси</div>
-			<div class="layout-header__phones phone">
-				<div class="phone__item">8(861) 991-20-00</div>
-				<div class="phone__item">8(861) 992-11-25</div>
-				<a href="" class="phone__vacanse">Вакансии</a>
-			</div>
-		</div>
+        <header class="layout-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+            <div class="layout-header__wrapper">
 
-	</div>
-</header>
+                <a href="" class="layout-header__logo logo"></a>
 
-<div class="navigation__similar">
-	<div class="navigation__wrapper">
-		<div class="navigation__lang navigation__lang_similar"><a href="" class="navigation__lang__link">En</a></div>
-	</div>
-</div>
+                <div class="layout-header__mobile">
+                    <div class="layout-header__mobile__button">
+                        <span class="layout-header__mobile__button__label">СКАЧАТЬ ПРИЛОЖЕНИЕ</span>
+                    </div>
 
-<nav class="navigation" role="navigation">
-	<div class="navigation__wrapper">
-		<ul class="navigation__list">
-		    <li class="navigation__item"><a href="/markup/index.html" class="navigation__link">Главная</a></li>
-		    <li class="navigation__item"><a href="/markup/tarif.html" class="navigation__link current">Тарифы</a></li>
-		    <li class="navigation__item"><a href="/markup/clients.html" class="navigation__link">Клиентам</a></li>
-		    <li class="navigation__item"><a href="/markup/drivers.html" class="navigation__link">Водителям</a></li>
-		    <li class="navigation__item"><a href="/markup/news.html" class="navigation__link">Новости</a></li>
-		    <li class="navigation__item"><a href="/markup/contacts.html" class="navigation__link">Контакты</a></li>
-		</ul>
-	</div>                            
-</nav>
+                    <div class="layout-header__mobile__app">
+                        <a href="" class="layout-header__mobile__app__item">
+                            <img src="/images/apple-logo.png" alt="">
+                        </a>
+                        <a href="" class="layout-header__mobile__app__item">
+                            <img src="/images/android-logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
 
-	<div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
-		
-		<div class="layout-wrapper__center clearfix">
-			<h1 class="content__title">Тарифы</h1>
-			
-			<div class="tarification__wrapper clearfix">
-				<div class="tarification__table">
-					<div class="table-touch">
-					<table class="tarification">
-						<colgroup>
-							<col>
-							<col width="160">
-							<col width="160">
-							<col width="160">
-						</colgroup>
-						<thead>
-							<tr>
-								<th></th>
-								<th>Посадка</th>
-								<th>Километр пути</th>
-								<th>Минута стоянки</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td><strong>Городской</strong></td>
-								<td>50</td>
-								<td>17</td>
-								<td>4</td>
-							</tr>
-							<tr class="c">
-								<td><strong>Предварительный</strong></td>
-								<td>80</td>
-								<td>17</td>
-								<td>4</td>
-							</tr>
-							<tr>
-								<td><strong>Экстренный</strong></td>
-								<td>100</td>
-								<td>17</td>
-								<td>4</td>
-							</tr>
-							<tr class="c">
-								<td><strong>Загородный</strong></td>
-								<td>0</td>
-								<td>19</td>
-								<td>4</td>
-							</tr>
-							<tr>
-								<td><strong>Перегон (город)</strong></td>
-								<td>300</td>
-								<td>42</td>
-								<td>4</td>
-							</tr>
-							<tr class="c">
-								<td><strong>Доставка</strong></td>
-								<td>250</td>
-								<td>0</td>
-								<td>0</td>
-							</tr>
-						</tbody>
-					</table>
-					</div>
-				</div>
-				<div class="tarification__info">
-					<div class="tarification__info__content">
-						<div class="tarification__info__support">
-							<img src="/images/technical-support.png" alt="">
-						</div>
-						
-						<div class="tarification__info__title">Принимаем отзывы и предложения<br>по телефону:</div>
-						<div class="tarification__info__phones">
-							<div class="tarification__info__phones__item">8(861) 992-11-25</div>
-							<div class="tarification__info__phones__item">8(861) 991-20-00</div>
-						</div>
+                <div class="layout-header__contacts">
+                    <div class="layout-header__contacts__title">Диспетчерская
+                        <br>служба такси</div>
+                    <div class="layout-header__phones phone">
+                        <div class="phone__item">8(861) 991-20-00</div>
+                        <div class="phone__item">8(861) 992-11-25</div>
+                        <span class="phone__vacanse">Вакансии</span>
+                    </div>
+                </div>
 
-						<div class="tarification__info__label">или напишите нам:</div>
-						<div class="tarification__info__email">
-							<a href="mailto:info@kavkaz-taxi.ru" class="tarification__info__email__link">info@kavkaz-taxi.ru</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div class="layout-container clearfix">
-			<div class="layout-wrapper__center clearfix">
-				<h1 class="content__title">Дополнительные услуги</h1>
-				
-				<div class="content">
+            </div>
+        </header>
 
-			        <ul class="icons clearfix">
-			            <li class="icons__item">
-			                <div class="icons__item__image">
-			                    <img src="/images/kids.png" alt="" class="icons__item__image__src">
-			                </div>
-			                <div class="icons__item__title">Автомобиль с детским<br>удерживающим<br>устройством</div>
-			            </li>
-			            <li class="icons__item">
-			                <div class="icons__item__image">
-			                    <img src="/images/minivan.png" alt="" class="icons__item__image__src">
-			                </div>
-			                <div class="icons__item__title">Минивен</div>
-			            </li>
-			            <li class="icons__item">
-			                <div class="icons__item__image">
-			                    <img src="/images/sofa.png" alt="" class="icons__item__image__src">
-			                </div>
-			                <div class="icons__item__title">Автомобиль комфорт<br>класса</div>
-			            </li>
-			            <li class="icons__item">
-			                <div class="icons__item__image">
-			                    <img src="/images/girl.png" alt="" class="icons__item__image__src">
-			                </div>
-			                <div class="icons__item__title">Женское такси</div>
-			            </li>
-			        </ul>
+        <div class="navigation__similar">
+            <div class="navigation__wrapper">
+                <div class="navigation__lang navigation__lang_similar">
+                    <a href="" class="navigation__lang__link">En</a>
+                </div>
+            </div>
+        </div>
 
-					<p>Мы всегда рады каждому клиенту, и приложим максимальные усилия, чтобы Вы остались с нами надолго! Наши низкие цены приятно удивят, ведь у нас экономное, недорогое такси Краснодара.</p>
-					<p>Спешите в аэропорт, на вокзал, или просто хотите с ветерком прокатиться по вечернему  Краснодару?  Тогда вы по адресу! В Такси КАВКАЗ всегда рады предложить широкий спектр услуг</p>
-				
-				</div>
-			</div>
-		</div>
+        <nav class="navigation" role="navigation">
+            <div class="navigation__wrapper">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="/markup/index.html" class="navigation__link">Главная</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/markup/tarif.html" class="navigation__link current">Тарифы</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/markup/clients.html" class="navigation__link">Клиентам</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/markup/drivers.html" class="navigation__link">Водителям</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/markup/news.html" class="navigation__link">Новости</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/markup/contacts.html" class="navigation__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-	</div>
-</div>
+        <div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
 
-<footer class="layout-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-	<div class="layout-footer__wrapper">
-		
-		<div class="layout-footer__copiright">© 2016 Такси “КАВКАЗ”™ &nbsp;&nbsp; Все права защищены</div>
-		
-	</div>
-</footer>
+            <div class="layout-wrapper__center clearfix">
+                <h1 class="content__title">Тарифы</h1>
 
-<!-- <script src="../js/vendor.min.js"></script>
+                <div class="tarification__wrapper clearfix">
+                    <div class="tarification__table">
+                        <div class="table-touch">
+                            <table class="tarification">
+                                <colgroup>
+                                    <col>
+                                        <col width="160">
+                                            <col width="160">
+                                                <col width="160">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Посадка</th>
+                                        <th>Километр пути</th>
+                                        <th>Минута стоянки</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <strong>Городской</strong>
+                                        </td>
+                                        <td>50</td>
+                                        <td>17</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="c">
+                                        <td>
+                                            <strong>Предварительный</strong>
+                                        </td>
+                                        <td>80</td>
+                                        <td>17</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Экстренный</strong>
+                                        </td>
+                                        <td>100</td>
+                                        <td>17</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="c">
+                                        <td>
+                                            <strong>Загородный</strong>
+                                        </td>
+                                        <td>0</td>
+                                        <td>19</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Перегон (город)</strong>
+                                        </td>
+                                        <td>300</td>
+                                        <td>42</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr class="c">
+                                        <td>
+                                            <strong>Доставка</strong>
+                                        </td>
+                                        <td>250</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tarification__info">
+                        <div class="tarification__info__content">
+                            <div class="tarification__info__support">
+                                <img src="/images/technical-support.png" alt="">
+                            </div>
+
+                            <div class="tarification__info__title">Принимаем отзывы и предложения
+                                <br>по телефону:</div>
+                            <div class="tarification__info__phones">
+                                <div class="tarification__info__phones__item">8(861) 992-11-25</div>
+                                <div class="tarification__info__phones__item">8(861) 991-20-00</div>
+                            </div>
+
+                            <div class="tarification__info__label">или напишите нам:</div>
+                            <div class="tarification__info__email">
+                                <a href="mailto:info@kavkaz-taxi.ru" class="tarification__info__email__link">info@kavkaz-taxi.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layout-container clearfix">
+                <div class="layout-wrapper__center clearfix">
+                    <h1 class="content__title">Дополнительные услуги</h1>
+
+                    <div class="content">
+
+                        <ul class="icons clearfix">
+                            <li class="icons__item">
+                                <div class="icons__item__image">
+                                    <img src="/images/kids.png" alt="" class="icons__item__image__src">
+                                </div>
+                                <div class="icons__item__title">Автомобиль с детским
+                                    <br>удерживающим
+                                    <br>устройством</div>
+                            </li>
+                            <li class="icons__item">
+                                <div class="icons__item__image">
+                                    <img src="/images/minivan.png" alt="" class="icons__item__image__src">
+                                </div>
+                                <div class="icons__item__title">Минивен</div>
+                            </li>
+                            <li class="icons__item">
+                                <div class="icons__item__image">
+                                    <img src="/images/sofa.png" alt="" class="icons__item__image__src">
+                                </div>
+                                <div class="icons__item__title">Автомобиль комфорт
+                                    <br>класса</div>
+                            </li>
+                            <li class="icons__item">
+                                <div class="icons__item__image">
+                                    <img src="/images/girl.png" alt="" class="icons__item__image__src">
+                                </div>
+                                <div class="icons__item__title">Женское такси</div>
+                            </li>
+                        </ul>
+
+                        <p>Мы всегда рады каждому клиенту, и приложим максимальные усилия, чтобы Вы остались с нами надолго! Наши низкие цены приятно удивят, ведь у нас экономное, недорогое такси Краснодара.</p>
+                        <p>Спешите в аэропорт, на вокзал, или просто хотите с ветерком прокатиться по вечернему Краснодару? Тогда вы по адресу! В Такси КАВКАЗ всегда рады предложить широкий спектр услуг</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="layout-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+        <div class="layout-footer__wrapper">
+
+            <div class="layout-footer__copiright">© 2016 Такси “КАВКАЗ”™ &nbsp;&nbsp; Все права защищены</div>
+
+        </div>
+    </footer>
+
+    <!-- <script src="../js/vendor.min.js"></script>
 <script src="../js/app.min.js"></script>
- --><!-- 
+ -->
+    <!-- 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=googleMap"></script>
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
  -->
 </body>
+
 </html>

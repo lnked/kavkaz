@@ -6,6 +6,10 @@
 	&__inner {
 		padding-top: 75px;
 		padding-bottom: $footer-height;
+
+		&._no-padding {
+			padding-top: 0;
+		}
 	}
 
 	&__center {

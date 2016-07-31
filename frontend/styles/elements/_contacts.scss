@@ -1,54 +1,87 @@
 .contacts {
     clear: both;
-    padding: 45px 0 80px;
+    padding: 0;
+    
+    &__item {
+        width: 50%;
+        height: 560px;
+        float: left;
 
-    &__wrapper {
-        @extend %layout;
-        font-size: 0;
+        &_map {
+            clear: both;
+        }
+        
+        &_form {
+            background-color: #1487d9;
+        }
     }
 
-    &__title {
-        color: #000;
-        font-size: 3rem;
-        font-weight: 300;
-        line-height: 0.8;
-        text-align: center;
-        margin-bottom: 50px;
-    }
+    &__form {
+        width: 480px;
+        padding: 70px 40px 0;
 
-    &__block {
-        color: #000;
-        font-size: 14px;
-        line-height: 1.5;
-        font-weight: 400;
-        margin-bottom: 35px;
+        &__address {
+            color: #fff;
+            height: 28px;
+            font-family: Arial, sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 30px;
+            text-align: center;
 
-        &_hide {
-            display: none;
+            &__line {
+                padding: 0 35px;
+                display: inline-block;
+                background: url(/images/marker.png) 0 50% no-repeat;
+            }
+         }
+
+        &__phones {
+            clear: both;
+            text-align: center;
+            margin-bottom: 25px;
+
+            &__item {
+                clear: both;
+                color: #fff;
+                font-family: Arial, sans-serif;
+                font-size: 2.4rem;
+                font-weight: 700;
+                line-height: 1;
+                margin-bottom: 5px;
+            }
+
+            &__vacance {
+                color: #fff;
+                font-family: $HelveticaNeueCyr;
+                font-size: 1.4rem;
+                font-weight: 700;
+                line-height: 1;
+            }
         }
 
-        strong {
-            color: #1e0f00;
-        }
-
-        a {
-            color: #2671b9;
-        }
-
-        p {
-            margin-bottom: 20px;
+        &__title {
+            color: #fff;
+            font-family: $HelveticaNeueCyr;
+            font-size: 2.4rem;
+            font-weight: 400;
+            line-height: 1;
+            text-align: center;
+            margin-bottom: 15px;
+            
+            &__line {
+                padding: 0 38px;
+                display: inline-block;
+                vertical-align: middle;
+                background: url(/images/black-phone-auricular.png) 0 50% no-repeat;
+            }
         }
     }
 }
 
 @media screen and (max-width: 768px) {
     .contacts {
-        padding-bottom: 45px;
-
-        &__block {
-            &_hide {
-                display: block;
-            }
-        }
+        
     }
 }
