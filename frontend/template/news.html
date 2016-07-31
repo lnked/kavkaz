@@ -9,13 +9,15 @@
 
     <div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
         
-        <h1 class="content__title">Новости</h1>
+        <div class="layout-wrapper__center clearfix">
+            <h1 class="content__title">Новости</h1>
 
-        @@include('./components/_sidebar-second.html', {
-        	"current": "news"
-        })
-        
-        @@include('./content/_news.html')
+            @@include('./components/_sidebar-second.html', {
+            	"current": "news"
+            })
+            
+            @@include('./content/_news.html')
+        </div>
         
     </div>
 </div>

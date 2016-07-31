@@ -5,21 +5,19 @@
 
 @import "mixins/*";
 
+@import "fonts/*";
+
 @import "helpers/layout";
 @import "helpers/inline";
 @import "helpers/button";
 @import "helpers/clearfix";
 
-@import "fonts/*";
-
-@import "layout";
+@import "base";
 
 @import "layout/*";
 
 @import "elements/*";
 
 @import "pages/*";
-
-@import "base";
 
 @import "components/*";

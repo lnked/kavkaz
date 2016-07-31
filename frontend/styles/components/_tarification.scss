@@ -1,0 +1,134 @@
+.tarification {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    &__wrapper {
+        clear: both;
+        margin-bottom: 90px;
+    }
+
+    &__table {
+        width: 100%;
+        float: left;
+        padding-right: 310px;
+    }
+
+    &__info {
+        width: 300px;
+        float: left;
+        height: 300px;
+        margin-left: -300px;
+        background-color: #fff;
+
+        &__content {
+            padding-top: 25px;
+            text-align: center;
+        }
+
+        &__support {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        &__title {
+            color: #494949;
+            font-family: Arial, sans-serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        &__phones {
+            clear: both;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            background: url(/images/phone.png) 25px 5px no-repeat;
+
+            &__item {
+                color: #007ce5;
+                font-family: Arial, sans-serif;
+                font-size: 2.4rem;
+                font-weight: 700;
+                line-height: 3.6rem;
+            }
+        }
+
+        &__label {
+            color: #494949;
+            font-family: Arial, sans-serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.8rem;
+        }
+
+        &__email {
+            clear: both;
+            text-align: center;
+
+            &__link {
+                color: #007ce5;
+                font-family: Arial, sans-serif;
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 3.6rem;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    thead {
+        tr {
+            th {
+                text-align: left;
+                color: #494949;
+                font-family: $HelveticaNeueCyr;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1;
+                padding: 18px 7px 12px;
+                background-color: #fff;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            vertical-align: middle;
+
+            td {
+                color: #494949;
+                padding: 10px 7px;
+                font-family: $HelveticaNeueCyr;
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 1.2;
+                word-break: break-word;
+                vertical-align: middle;
+
+                &.tac {
+                    text-align: center;
+                }
+
+                strong {
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                }
+            }
+
+            &:nth-child(2n+2), &.c {
+                td {
+                    background-color: #badef9;
+                }
+            }
+
+            &:not(:last-child) {
+                td {
+                    border-bottom: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
