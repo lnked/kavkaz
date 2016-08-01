@@ -71,12 +71,52 @@
 
 @media only screen and (max-width: 768px) {
 	.layout-header {
+		height: auto;
+		padding: 25px 0 30px;
+		background-size: cover;
+
+		&__logo,
+		&__mobile,
+		&__contacts {
+			position: relative;
+		    left: auto;
+		    top: auto;
+		    margin-left: 0;
+		}
+
 		&__logo {
-			left: 10px;
+			margin: 0 auto 30px;
 		}
 		
-		&__search {
-			display: none;
+		&__mobile {
+			text-align: center;
+			margin: 0 auto 20px;
+
+			&__button {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+
+		&__contacts {
+			clear: both;
+			float: none;
+
+			&__title {
+				text-align: center;
+				margin-bottom: 20px;
+
+				br {
+					display: none;
+				}
+			}
+		}
+
+		&__phones {
+			padding: 0 30px;
+		    max-width: 270px;
+    		margin: 0 auto;
+			text-align: center;
 		}
 	}
 }
@@ -84,7 +124,6 @@
 @media only screen and (max-width: 375px) {
 	.layout-header {
 		&__contacts {
-			background: none;
 			padding-left: 0;
 		}
 	}

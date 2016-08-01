@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <!-- (c) lnk. celebro | http://www.celebro.ru/ -->
 <html lang="ru" class="no-js" itemscope="itemscope" xmlns="http://www.w3.org/1999/xhtml" itemtype="http://schema.org/WebPage">
-
-<head>
+<head> 
     <link rel="stylesheet" href="../css/main.min.css">
 
     <meta charset="UTF-8">
@@ -15,270 +14,234 @@
     <meta content="email=no" name="format-detection">
     <meta content="address=no" name="format-detection">
     <meta content="telephone=no" name="format-detection">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/favicon/manifest.json">
-    <link rel="shortcut icon" href="/favicon/favicon.ico">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#007ce5">
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/favicon/manifest.json">
+        <link rel="shortcut icon" href="/favicon/favicon.ico">
+        <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#007ce5">
 
     <!--[if IEMobile]>
         <meta http-equiv="cleartype" content="on">
         <meta http-equiv="imagetoolbar" content="false">
     <![endif]-->
 
-    <script>
-        (function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);
-    </script>
+    <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
     <title itemprop="name">Main</title>
 </head>
-
 <body>
 
-    <div class="layout-wrapper">
-        <span class="sandwich js-sandwich-menu">
-            <span class="sandwich__layer">Menu</span>
-        </span>
+<div class="layout-wrapper">
+	<div class="menu-overlay" id="menu-overlay"></div>
 
-        <div class="menu-overlay" id="menu-overlay"></div>
+<span class="sandwich js-sandwich-menu">
+	<span class="sandwich__layer">Menu</span>
+</span>
 
-        <header class="layout-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-            <div class="layout-header__wrapper">
+<header class="layout-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+	<div class="layout-header__wrapper">
+		
+		<a href="" class="layout-header__logo logo"></a>
+		
+		<div class="layout-header__mobile">
+			<div class="layout-header__mobile__button">
+				<span class="layout-header__mobile__button__label">СКАЧАТЬ ПРИЛОЖЕНИЕ</span>
+			</div>
 
-                <a href="" class="layout-header__logo logo"></a>
+			<div class="layout-header__mobile__app">
+				<a href="" class="layout-header__mobile__app__item"><img src="/images/apple-logo.png" alt=""></a>
+				<a href="" class="layout-header__mobile__app__item"><img src="/images/android-logo.png" alt=""></a>
+			</div>
+		</div>
 
-                <div class="layout-header__mobile">
-                    <div class="layout-header__mobile__button">
-                        <span class="layout-header__mobile__button__label">СКАЧАТЬ ПРИЛОЖЕНИЕ</span>
+		<div class="layout-header__contacts">
+			<div class="layout-header__contacts__title">Диспетчерская <br>служба такси</div>
+			<div class="layout-header__phones phone">
+				<div class="phone__item">8(861) 991-20-00</div>
+				<div class="phone__item">8(861) 992-11-25</div>
+				<span class="phone__vacanse">Вакансии</span>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<div class="navigation__similar"></div>
+
+<nav class="navigation" role="navigation">
+	<div class="navigation__wrapper">
+		<ul class="navigation__list">
+		    <li class="navigation__item"><a href="/markup/index.html" class="navigation__link">Главная</a></li>
+		    <li class="navigation__item"><a href="/markup/tarif.html" class="navigation__link current">Тарифы</a></li>
+		    <li class="navigation__item"><a href="/markup/clients.html" class="navigation__link">Клиентам</a></li>
+		    <li class="navigation__item"><a href="/markup/drivers.html" class="navigation__link">Водителям</a></li>
+		    <li class="navigation__item"><a href="/markup/news.html" class="navigation__link">Новости</a></li>
+		    <li class="navigation__item"><a href="/markup/contacts.html" class="navigation__link">Контакты</a></li>
+		</ul>
+	</div>                            
+</nav>
+
+	<div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
+		
+		<div class="layout-wrapper__center clearfix">
+			<h1 class="content__title">Наши преимущества</h1>
+			
+			<div class="content content_main">
+		        <ul class="icons clearfix">
+		            <li class="icons__item">
+		                <div class="icons__item__image">
+		                    <img src="/images/kids.png" alt="" class="icons__item__image__src">
+		                </div>
+		                <div class="icons__item__title _normal">Вежливые водители</div>
+		            </li>
+		            <li class="icons__item">
+		                <div class="icons__item__image">
+		                    <img src="/images/minivan.png" alt="" class="icons__item__image__src">
+		                </div>
+		                <div class="icons__item__title _normal">Таксометр в каждой<br>машине</div>
+		            </li>
+		            <li class="icons__item">
+		                <div class="icons__item__image">
+		                    <img src="/images/sofa.png" alt="" class="icons__item__image__src">
+		                </div>
+		                <div class="icons__item__title _normal">Быстрая подача</div>
+		            </li>
+		            <li class="icons__item">
+		                <div class="icons__item__image">
+		                    <img src="/images/girl.png" alt="" class="icons__item__image__src">
+		                </div>
+		                <div class="icons__item__title _normal">Лучшие цены</div>
+		            </li>
+		            <li class="icons__item">
+		                <div class="icons__item__image">
+		                    <img src="/images/girl.png" alt="" class="icons__item__image__src">
+		                </div>
+		                <div class="icons__item__title _normal">Женское такси</div>
+		            </li>
+		            <li class="icons__item">
+		                <div class="icons__item__image">
+		                    <img src="/images/girl.png" alt="" class="icons__item__image__src">
+		                </div>
+		                <div class="icons__item__title _normal">Любимый водитель</div>
+		            </li>
+		        </ul>
+
+		        <p>Мы всегда рады каждому клиенту, и приложим максимальные усилия, чтобы Вы остались с нами надолго! Наши низкие цены приятно удивят, ведь у нас экономное, недорогое такси Краснодара.</p>
+				
+				<p>Спешите в аэропорт, на вокзал, или просто хотите с ветерком прокатиться по вечернему  Краснодару?  Тогда вы по адресу! В Такси КАВКАЗ всегда рады предложить широкий спектр услуг</p>
+				
+			</div>
+
+		</div>
+	
+		<div class="layout-container clearfix">
+			<div class="layout-wrapper__center clearfix">
+				<section class="news-main">
+			        <div class="content__title">Новости</div>
+
+			        <div class="columns clearfix">
+			            <div class="columns__item columns__item_noborder">
+			                <article class="news-main__item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
+			                    <time class="news-main__item__date" datetime="2016-03-12" itemprop="datePublished">30 июля 2016</time>
+			                    <div class="news-main__item__wrapper">
+			                        <figure class="news-main__item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				                        <a href="./news-main__item.html" itemprop="url">
+				                            <img src="/images/news-image.jpg" class="news-main__item__image__src" itemprop="image" alt="">
+				                        </a>
+				                    </figure>
+				                    
+				                    <div class="news-main__item__content">
+				                    	<a href="" class="news-main__item__title">Госдума планирует урегулировать<br>деятельность агрегаторов такси<br>до конца года</a>
+				                        <div class="news-main__item__description" itemprop="description">
+				                            Согласно рассматриваемому в нижней палате законопроекту, агрегатор будет иметь право работать, если он...
+				                        </div>
+				                    </div>
+			                    </div>
+			                </article>
+			            </div>
+
+			            <div class="columns__item columns__item_noborder">
+			                <article class="news-main__item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
+		                        <time class="news-main__item__date" datetime="2016-03-12" itemprop="datePublished">30 июля 2016</time>
+			                    <div class="news-main__item__wrapper">
+				                    <figure class="news-main__item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				                        <a href="./news-main__item.html" itemprop="url">
+				                            <img src="/images/news-image.jpg" class="news-main__item__image__src" itemprop="image" alt="">
+				                        </a>
+				                    </figure>
+				                    
+				                    <div class="news-main__item__content">
+				                    	<a href="" class="news-main__item__title">Госдума планирует урегулировать<br>деятельность агрегаторов такси<br>до конца года</a>
+				                        <div class="news-main__item__description" itemprop="description">
+				                            Согласно рассматриваемому в нижней палате законопроекту, агрегатор будет иметь право работать, если он...
+				                        </div>
+				                    </div>
+			                    </div>
+			                </article>
+			            </div>
+			        </div>
+
+				</section>
+				
+				<div class="news-main__more">
+					<a href="" class="news-main__more__link">Все новости</a>
+				</div>
+			</div>
+		</div>
+		
+		<section class="contacts">
+            <div class="contacts__item contacts__item_map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9yMC2o8PQ_nti8wqtQWtUDchf9OgQsA0&width=100%&height=560&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+            </div>
+
+            <div class="contacts__item contacts__item_form">
+                <div class="contacts__form">
+                    <div class="contacts__form__address">
+                        <span class="contacts__form__address__line">Россия, г. Краснодар, ул. Таманская, 180</span>
+                    </div>
+                    <div class="contacts__form__phones">
+                        <div class="contacts__form__phones__item">8(861) 991-20-00</div>
+                        <div class="contacts__form__phones__item">8(861) 992-11-25</div>
+                        <div class="contacts__form__phones__vacance">Вакансии</div>
                     </div>
 
-                    <div class="layout-header__mobile__app">
-                        <a href="" class="layout-header__mobile__app__item">
-                            <img src="/images/apple-logo.png" alt="">
-                        </a>
-                        <a href="" class="layout-header__mobile__app__item">
-                            <img src="/images/android-logo.png" alt="">
-                        </a>
+                    <div class="contacts__form__title">
+                        <span class="contacts__form__title__line">Заказать звонок</span>
                     </div>
-                </div>
 
-                <div class="layout-header__contacts">
-                    <div class="layout-header__contacts__title">Диспетчерская
-                        <br>служба такси</div>
-                    <div class="layout-header__phones phone">
-                        <div class="phone__item">8(861) 991-20-00</div>
-                        <div class="phone__item">8(861) 992-11-25</div>
-                        <span class="phone__vacanse">Вакансии</span>
-                    </div>
-                </div>
-
-            </div>
-        </header>
-
-        <div class="navigation__similar">
-            <div class="navigation__wrapper">
-                <div class="navigation__lang navigation__lang_similar">
-                    <a href="" class="navigation__lang__link">En</a>
-                </div>
-            </div>
-        </div>
-
-        <nav class="navigation" role="navigation">
-            <div class="navigation__wrapper">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="/markup/index.html" class="navigation__link">Главная</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="/markup/tarif.html" class="navigation__link current">Тарифы</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="/markup/clients.html" class="navigation__link">Клиентам</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="/markup/drivers.html" class="navigation__link">Водителям</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="/markup/news.html" class="navigation__link">Новости</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="/markup/contacts.html" class="navigation__link">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
-
-            <div class="layout-wrapper__center clearfix">
-                <h1 class="content__title">Наши преимущества</h1>
-
-                <div class="content content_main">
-                    <ul class="icons clearfix">
-                        <li class="icons__item">
-                            <div class="icons__item__image">
-                                <img src="/images/kids.png" alt="" class="icons__item__image__src">
-                            </div>
-                            <div class="icons__item__title _normal">Вежливые водители</div>
-                        </li>
-                        <li class="icons__item">
-                            <div class="icons__item__image">
-                                <img src="/images/minivan.png" alt="" class="icons__item__image__src">
-                            </div>
-                            <div class="icons__item__title _normal">Таксометр в каждой
-                                <br>машине</div>
-                        </li>
-                        <li class="icons__item">
-                            <div class="icons__item__image">
-                                <img src="/images/sofa.png" alt="" class="icons__item__image__src">
-                            </div>
-                            <div class="icons__item__title _normal">Быстрая подача</div>
-                        </li>
-                        <li class="icons__item">
-                            <div class="icons__item__image">
-                                <img src="/images/girl.png" alt="" class="icons__item__image__src">
-                            </div>
-                            <div class="icons__item__title _normal">Лучшие цены</div>
-                        </li>
-                        <li class="icons__item">
-                            <div class="icons__item__image">
-                                <img src="/images/girl.png" alt="" class="icons__item__image__src">
-                            </div>
-                            <div class="icons__item__title _normal">Женское такси</div>
-                        </li>
-                        <li class="icons__item">
-                            <div class="icons__item__image">
-                                <img src="/images/girl.png" alt="" class="icons__item__image__src">
-                            </div>
-                            <div class="icons__item__title _normal">Любимый водитель</div>
-                        </li>
-                    </ul>
-
-                    <p>Мы всегда рады каждому клиенту, и приложим максимальные усилия, чтобы Вы остались с нами надолго! Наши низкие цены приятно удивят, ведь у нас экономное, недорогое такси Краснодара.</p>
-
-                    <p>Спешите в аэропорт, на вокзал, или просто хотите с ветерком прокатиться по вечернему Краснодару? Тогда вы по адресу! В Такси КАВКАЗ всегда рады предложить широкий спектр услуг</p>
-
-                </div>
-
-            </div>
-
-            <div class="layout-container clearfix">
-                <div class="layout-wrapper__center clearfix">
-                    <section class="news-main">
-                        <div class="content__title">Новости</div>
-
-                        <div class="columns clearfix">
-                            <div class="columns__item columns__item_noborder">
-                                <article class="news-main__item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
-                                    <time class="news-main__item__date" datetime="2016-03-12" itemprop="datePublished">30 июля 2016</time>
-                                    <div class="news-main__item__wrapper">
-                                        <figure class="news-main__item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="./news-main__item.html" itemprop="url">
-                                                <img src="/images/news-image.jpg" class="news-main__item__image__src" itemprop="image" alt="">
-                                            </a>
-                                        </figure>
-
-                                        <div class="news-main__item__content">
-                                            <a href="" class="news-main__item__title">Госдума планирует урегулировать
-                                                <br>деятельность агрегаторов такси
-                                                <br>до конца года</a>
-                                            <div class="news-main__item__description" itemprop="description">
-                                                Согласно рассматриваемому в нижней палате законопроекту, агрегатор будет иметь право работать, если он...
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="columns__item columns__item_noborder">
-                                <article class="news-main__item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
-                                    <time class="news-main__item__date" datetime="2016-03-12" itemprop="datePublished">30 июля 2016</time>
-                                    <div class="news-main__item__wrapper">
-                                        <figure class="news-main__item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                            <a href="./news-main__item.html" itemprop="url">
-                                                <img src="/images/news-image.jpg" class="news-main__item__image__src" itemprop="image" alt="">
-                                            </a>
-                                        </figure>
-
-                                        <div class="news-main__item__content">
-                                            <a href="" class="news-main__item__title">Госдума планирует урегулировать
-                                                <br>деятельность агрегаторов такси
-                                                <br>до конца года</a>
-                                            <div class="news-main__item__description" itemprop="description">
-                                                Согласно рассматриваемому в нижней палате законопроекту, агрегатор будет иметь право работать, если он...
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
+                    <form action="" method="post" class="form ajax-form clearfix">
+                        <div class="form__row clearfix">
+                            <input name="name" class="form__input" placeholder="ФИО">
                         </div>
 
-                    </section>
+                        <div class="form__row clearfix">
+                            <input name="phone" class="form__input js-phone-watcher" placeholder="Телефон">
+                        </div>
 
-                    <div class="news-main__more">
-                        <a href="" class="news-main__more__link">Все новости</a>
-                    </div>
+                        <div class="form__button">
+                            <button type="submit" class="button button_submit">Отправить</button>
+                        </div>
+                    </form>
+                    
                 </div>
             </div>
+        </section>
+        
+	</div>
+</div>
 
-            <section class="contacts">
-                <div class="contacts__item contacts__item_map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9yMC2o8PQ_nti8wqtQWtUDchf9OgQsA0&width=100%&height=560&lang=ru_RU&sourceType=constructor&scroll=true"></script>
-                </div>
+<footer class="layout-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class="layout-footer__wrapper">
+		
+		<div class="layout-footer__copiright">© 2016 Такси “КАВКАЗ”™ &nbsp;&nbsp; Все права защищены</div>
+		
+	</div>
+</footer>
 
-                <div class="contacts__item contacts__item_form">
-                    <div class="contacts__form">
-                        <div class="contacts__form__address">
-                            <span class="contacts__form__address__line">Россия, г. Краснодар, ул. Таманская, 180</span>
-                        </div>
-                        <div class="contacts__form__phones">
-                            <div class="contacts__form__phones__item">8(861) 991-20-00</div>
-                            <div class="contacts__form__phones__item">8(861) 992-11-25</div>
-                            <div class="contacts__form__phones__vacance">Вакансии</div>
-                        </div>
-
-                        <div class="contacts__form__title">
-                            <span class="contacts__form__title__line">Заказать звонок</span>
-                        </div>
-
-                        <form action="" method="post" class="form ajax-form clearfix">
-                            <div class="form__row clearfix">
-                                <input name="name" class="form__input" placeholder="ФИО">
-                            </div>
-
-                            <div class="form__row clearfix">
-                                <input name="phone" class="form__input js-phone-watcher" placeholder="Телефон">
-                            </div>
-
-                            <div class="form__button">
-                                <button type="submit" class="button button_submit">Отправить</button>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-            </section>
-
-        </div>
-    </div>
-
-    <footer class="layout-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-        <div class="layout-footer__wrapper">
-
-            <div class="layout-footer__copiright">© 2016 Такси “КАВКАЗ”™ &nbsp;&nbsp; Все права защищены</div>
-
-        </div>
-    </footer>
-
-    <!-- <script src="../js/vendor.min.js"></script>
+<script src="../js/vendor.min.js"></script>
 <script src="../js/app.min.js"></script>
- -->
-    <!-- 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=googleMap"></script>
-<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
- -->
-</body>
 
+</body>
 </html>

@@ -60,4 +60,18 @@ p {
     .sidebar + .content {
         padding-left: 0;
     }
+
+    .content {
+        float: none;
+
+        &_left {
+            padding-right: 0;
+        }
+    }
+
+    .content-tarification {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
 }

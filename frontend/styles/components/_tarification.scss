@@ -136,3 +136,28 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .tarification__wrapper {
+        margin-bottom: 0;
+    }
+
+    .tarification__table {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .tarification__info {
+        float: none;
+        clear: both;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}
