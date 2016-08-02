@@ -4,7 +4,7 @@
 	<span class="sandwich__layer">Menu</span>
 </span>
 
-<header class="layout-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+<header class="layout-header@@if (typeof addclass !== 'undefined') { @@addclass }" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 	<div class="layout-header__wrapper">
 		
 		<a href="" class="layout-header__logo logo"></a>
@@ -37,7 +37,7 @@
 <nav class="navigation" role="navigation">
 	<div class="navigation__wrapper">
 		<ul class="navigation__list">
-		    <li class="navigation__item"><a href="/markup/index.html" class="navigation__link@@if (current == 'index') { current}">Главная</a></li>
+		    <li class="navigation__item"><a href="/markup/index.html" class="navigation__link _main@@if (current == 'index') { current}">Главная</a></li>
 		    <li class="navigation__item"><a href="/markup/tarif.html" class="navigation__link@@if (current == 'tarif') { current}">Тарифы</a></li>
 		    <li class="navigation__item"><a href="/markup/clients.html" class="navigation__link@@if (current == 'clients') { current}">Клиентам</a></li>
 		    <li class="navigation__item"><a href="/markup/drivers.html" class="navigation__link@@if (current == 'drivers') { current}">Водителям</a></li>

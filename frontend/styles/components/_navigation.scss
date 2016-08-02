@@ -74,6 +74,10 @@
 		&.current {
 			color: #fff;
 			background-color: #494949;
+
+			&._main {
+				background-color: #f6171e;
+			}
 		}
 	}
 }

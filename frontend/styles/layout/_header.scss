@@ -1,6 +1,11 @@
 .layout-header {
 	height: 223px;
 	background: url(/images/header-background.jpg) 50% 50% no-repeat;
+	
+	&._is-main {
+		height: 685px;
+		background-image: url(/images/main-header.jpg);
+	}
 
 	&__wrapper {
 		@extend %layout;
@@ -15,7 +20,7 @@
 	&__mobile {
 		position: absolute;
 		left: 50%;
-		top: 79px;
+		bottom: 30px;
 		margin-left: -129px;
 
 		&__button {
