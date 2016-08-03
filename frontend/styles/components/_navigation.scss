@@ -115,7 +115,7 @@
 			width: 94%;
 			height: auto;
 			margin: 0 auto;
-			padding: 15px 20px;
+			padding: 45px 20px;
 			transform: scale(0.4, 0.4);
 			transition: transform $a-time;
 		}
@@ -148,7 +148,10 @@
 			&:hover,
 			&.current {
 				color: #fff;
-				background: none;
+
+				&, &._main {
+					background: none;
+				}
 			}
 
 			&.current {

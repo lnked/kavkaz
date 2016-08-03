@@ -25,11 +25,19 @@
 
 		&__button {
 			height: 48px;
-			padding: 0 14px 0 17px;
-			background-color: #f6171e;
+			cursor: pointer;
+			user-select: none;
 			border-radius: 5px;
 			margin-bottom: 20px;
+			display: inline-block;
+			padding: 0 14px 0 17px;
+			background-color: #f6171e;
 			box-shadow: 0 2px 0 #ae0005;
+			transition: background-color $a-time;
+
+			&:hover {
+				background-color: darken(#f6171e, 10%);
+			}
 
 			&__label {
 				color: #fff;
@@ -95,7 +103,7 @@
 		
 		&__mobile {
 			text-align: center;
-			margin: 0 auto 20px;
+			margin: 80px auto 0;
 
 			&__button {
 				display: inline-block;
@@ -129,7 +137,22 @@
 @media only screen and (max-width: 375px) {
 	.layout-header {
 		&__contacts {
+		    margin-top: 10px;
 			padding-left: 0;
+
+			&__title {
+			    font-size: 1.4rem;
+			    margin-bottom: 10px;
+			}
+		}
+
+		&._is-main &__contacts {
+			margin-top: 130px;
+		}
+
+		&._is-main &__mobile {
+		    top: 380px;
+		    margin-top: 0;
 		}
 	}
 }
