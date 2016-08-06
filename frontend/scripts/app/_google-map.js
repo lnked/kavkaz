@@ -82,7 +82,7 @@ function googleMap()
 			{
 				infowindow.close();
 			}
-
+			
 			infowindow.open(map, marker);
 		});
 	}
